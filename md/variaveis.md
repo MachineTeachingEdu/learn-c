@@ -1,4 +1,0 @@
----
-title: Variáveis
----
-# Variáveis
