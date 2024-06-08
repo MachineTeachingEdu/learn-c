@@ -51,7 +51,7 @@ export function Pre({ children }: { children: any }) {
 }
 
 export function Code({ children }: { children: any }) {
-  return createElement('code', { className: 'text-sm bg-gray-900 text-white rounded-lg p-1 mt-1 mb-1' }, children);
+  return createElement('code', { className: 'text-sm bg-gray-900 text-white rounded-lg p-1 mt-1 mb-1 whitespace-pre-wrap' }, children);
 }
 
 export function Strong({ children }: { children: any }) {

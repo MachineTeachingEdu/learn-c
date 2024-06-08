@@ -3,8 +3,6 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { DataProvider } from '@/hooks/use-data';
 import { getMarkdownListMetadata } from '@/utils/md-file-handlers';
-
-import Container from '@/components/container';
 import { Toaster } from 'react-hot-toast';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -23,9 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <DataProvider markdownListMetadata={getMarkdownListMetadata()}>
-          <Container>
-            {children}
-          </Container>
+          {children}
           <Toaster />
         </DataProvider>
       </body>
