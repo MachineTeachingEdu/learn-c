@@ -1,0 +1,86 @@
+.markdownContainer {
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 850px;
+  margin: auto;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, ul, ol, pre, code {
+    margin-bottom: theme('margin.4');
+  }
+
+  pre {
+    border-radius: theme('borderRadius.md');
+    overflow-x: auto;
+  }
+
+  pre > code {
+    margin: 0;
+    padding: 0;
+    white-space: pre-wrap;
+    padding: theme('padding.3');
+  }
+
+  code {
+    font-size: theme('fontSize.base');
+  }
+
+  p {
+    margin-top: 0;
+    font-size: theme('fontSize.lg');
+  }
+ 
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h5 {
+    font-size: theme('fontSize.lg');
+  }
+
+  h6 {
+    font-size: theme('fontSize.base');
+  }
+
+  li {
+    margin-bottom: theme('margin.1');
+  }
+
+  div:has(> iframe) {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: theme('margin.4');
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+}

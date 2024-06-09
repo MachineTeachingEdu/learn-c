@@ -1,20 +1,20 @@
+import { processMarkdown } from '@/utils/markdown-parser';
+import { getMarkdown, getMarkdowns } from '@/utils/get-markdown';
 import Container from '@/components/container';
-import MdRender from '@/components/md-render';
-import { getMarkdown } from '@/utils/get-markdown';
-import { getMarkdownListMetadata } from '@/utils/md-file-handlers';
+import styles from './page.module.scss';
 
 export async function generateStaticParams() {
-  const markdownListMetadata = getMarkdownListMetadata();
-  return markdownListMetadata.map((metadata) => ({ slug: metadata.slug }));
+  const markdowns = await getMarkdowns();
+  return markdowns.map((markdown) => ({ slug: markdown.slug }));
 }
 
 export default async function Page({ params }: { params: { slug: string } }) {
-  const data = await getMarkdown(params.slug);
+  const { content } = await getMarkdown(params.slug);
+  const html = await processMarkdown(content);
+
   return (
     <Container>
-      <div className="p-6 w-full max-w-[1000px] m-auto">
-        <MdRender content={data.content} />
-      </div>
+      <div className={styles.markdownContainer} dangerouslySetInnerHTML={{ __html: html }} />
     </Container>
-  );
+  )
 }

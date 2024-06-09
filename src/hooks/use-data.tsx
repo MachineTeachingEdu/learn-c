@@ -7,25 +7,26 @@ import {
 } from 'react';
 
 export type MarkdownMetadata = {
+  data: {
+    title: string;
+  }
   slug: string;
-  title: string;
-  subtitle: string;
 };
 
 type DataContextType = {
-  markdownListMetadata: MarkdownMetadata[];
+  markdowns: MarkdownMetadata[];
 };
 
 export const DataContext = createContext<DataContextType>({} as DataContextType);
 
 type DataProviderProps = {
   children: ReactNode;
-  markdownListMetadata: MarkdownMetadata[];
+  markdowns: MarkdownMetadata[];
 };
 
-export function DataProvider({ children, markdownListMetadata }: DataProviderProps) {
+export function DataProvider({ children, markdowns }: DataProviderProps) {
   return (
-    <DataContext.Provider value={{ markdownListMetadata }}>
+    <DataContext.Provider value={{ markdowns }}>
       {children}
     </DataContext.Provider>
   );
