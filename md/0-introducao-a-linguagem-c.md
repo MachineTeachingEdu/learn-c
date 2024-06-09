@@ -6,7 +6,7 @@ title: Introdução à Linguagem C
 
 ::embed{src="https://www.youtube.com/embed/KJgsSFOSQv0?si=9zSReQ8YAR23VJGR"}
 
-::embed{src="https://www.jdoodle.com/embed/v1/dffabc92fddc3943"}
+::embed{src="https://onlinegdb.com/KZkyzS37Q"}
 
 A linguagem de programação C é uma das mais influentes e amplamente utilizadas no desenvolvimento de software. Criada por Dennis Ritchie nos anos 1970, C é conhecida por sua eficiência, controle de hardware e versatilidade. Neste documento, vamos explorar os conceitos básicos da linguagem C, ilustrados com código e diagramas.
 
