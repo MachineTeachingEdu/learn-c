@@ -1,8 +1,8 @@
 ---
-title: 01. Apresentação do Curso
+title: 02. Introdução a Linguagem C
 ---
 
-# Apresentação do Curso
+# Introdução a Linguagem C
 
 Olá! Bem-vindo ao curso de introdução à programação da UFRJ. 😊 Este é o material de nossa primeira aula. Além de conhecer os objetivos e o formato do curso, essa primeira semana também será uma oportunidade para conhecer seu professor e alguns dos monitores das atividades práticas.
 
