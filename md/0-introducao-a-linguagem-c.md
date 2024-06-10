@@ -6,6 +6,15 @@ title: 02. Introdução a Linguagem C
 
 ::embed{src="https://onlinegdb.com/t17805MTK"}
 
+```c
+#include <stdio.h>
+
+int main() {
+  int hello = 1;
+  printf("%d", hello)
+}
+```
+
 Olá! Bem-vindo ao curso de introdução à programação da UFRJ. 😊 Este é o material de nossa primeira aula. Além de conhecer os objetivos e o formato do curso, essa primeira semana também será uma oportunidade para conhecer seu professor e alguns dos monitores das atividades práticas.
 
 Nós, da equipe de instrutores, também gostaríamos de conhecer um pouco mais sobre você, seus mecanismos de acesso ao material deste curso e sobre suas expectativas. Para isso, pedimos que, caso queira, preencha o pequeno formulário [“Conhecendo a turma de Computação 1”](https://forms.gle/emNUGHTF9MSsECDJ7).
