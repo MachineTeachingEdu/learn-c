@@ -1,61 +1,75 @@
-'use client';
+'use client'
 
-import { MarkdownMetadata, useData } from '@/hooks/use-data';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { ReactNode } from 'react';
+import { MarkdownMetadata, useData } from '@/hooks/use-data'
+import Link from 'next/link'
+import { FaBars, FaTimes } from 'react-icons/fa'
+import { usePathname } from 'next/navigation'
+import { ReactNode, useState } from 'react'
 
 export type ContainerProps = {
-  children: ReactNode;
-};
+  children: ReactNode
+}
 
 type ListItemProps = {
-  isActive: boolean;
-  markdown: MarkdownMetadata;
-};
+  isActive: boolean
+  markdown: MarkdownMetadata
+}
 
 function ListItem(props: ListItemProps) {
   return (
     <li>
-      <Link className={`no-underline ${props.isActive ? 'font-bold text-blue-900' : 'text-black'}`} href={`/aulas/${props.markdown.slug}`}>
+      <Link
+        className={`no-underline ${props.isActive ? 'font-bold text-blue-900' : 'text-black'}`}
+        href={`/aulas/${props.markdown.slug}`}
+      >
         {props.markdown.data.title}
       </Link>
     </li>
-  );
+  )
 }
 
 export default function Container({ children }: ContainerProps) {
-  const { markdowns } = useData();
-  const pathname = usePathname();
+  const { markdowns } = useData()
+  const pathname = usePathname()
+
+  const [opened, setOpened] = useState(false)
 
   return (
-    <div className="w-full min-h-screen flex">
-      <div className="w-[400px]">
-        <header className="flex items-center justify-center gap-3 p-4">
-          <img className="w-14" src="/unirio.png" alt="UNIRIO" />
-          <h1 className="text-xl">
-            Técnicas de Programação 1
+    <div className="min-h-screen w-full xl:flex">
+      <div className="sticky top-0 z-50 shadow-sm xl:static">
+        <div className="relative z-30 flex h-16 justify-between bg-white p-3">
+          <h1 className="text-2xl font-black text-gray-900">
+            <span className="text-blue-500">{'{ '}</span>
+            TP1
+            <span className="text-blue-500">{' }'}</span>
           </h1>
-        </header>
-        <hr className="border-none h-[.5px] bg-black opacity-20" />
-        <nav className="p-4">
-          <h2 className="text-xl font-bold">
-            Lista de Aulas
-          </h2>
-          <ul className="list-decimal mt-3 flex flex-col gap-1">
-            {markdowns.map((markdown, i) => (
+          <button
+            className="text-3xl xl:hidden"
+            type="button"
+            onClick={() => setOpened((e) => !e)}
+          >
+            {opened ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
+        <nav
+          className={`absolute bg-white ${opened ? 'top-16' : '-top-full'} left-0 z-20 w-full px-3 pb-3 shadow-md xl:static xl:top-auto xl:h-full xl:min-w-[350px]`}
+        >
+          <hr />
+          <h2 className="mt-3 text-xl font-bold">Lista de Aulas</h2>
+          <ul className="my-2 list-none pl-4 text-lg">
+            {markdowns.map((markdown) => (
               <ListItem
-                key={`item-list-${i}`}
-                isActive={pathname.includes(markdown.slug)}
+                key={markdown.slug}
+                isActive={pathname === `/aulas/${markdown.slug}`}
                 markdown={markdown}
               />
             ))}
           </ul>
         </nav>
       </div>
-      <div className="bg-gray-50 w-full">
+      <div className="mx-auto h-screen w-full overflow-y-scroll">
         {children}
       </div>
     </div>
-  );
+  )
 }

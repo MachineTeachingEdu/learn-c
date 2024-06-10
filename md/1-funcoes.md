@@ -1,5 +1,0 @@
----
-title: Funções
----
-
-# fasdfasd

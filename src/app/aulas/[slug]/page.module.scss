@@ -1,15 +1,19 @@
 .markdownContainer {
-  padding: 1.5rem;
-  width: 100%;
+  width: 90%;
   max-width: 850px;
   margin: auto;
+  padding-block: 1rem;
+
+  h1 {
+    line-height: 120%;
+  }
 
   h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     margin: 0;
   }
 
-  h1, h2, h3, h4, h5, h6, p, ul, ol, pre, code {
+  h1, h2, h3, h4, h5, h6, p, ul, ol, pre, code, iframe {
     margin-bottom: theme('margin.4');
   }
 
@@ -29,7 +33,7 @@
     font-size: theme('fontSize.base');
   }
 
-  p {
+  p, li {
     margin-top: 0;
     font-size: theme('fontSize.lg');
   }
@@ -59,7 +63,7 @@
   }
 
   li {
-    margin-bottom: theme('margin.1');
+    margin-bottom: theme('margin.2');
   }
 
   div:has(> iframe) {

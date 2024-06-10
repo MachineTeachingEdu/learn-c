@@ -1,4 +1,4 @@
-import Container from '@/components/container';
+import Container from '@/components/container'
 
 export default function Page() {
   return (
@@ -7,5 +7,5 @@ export default function Page() {
         <h1>Page</h1>
       </div>
     </Container>
-  );
+  )
 }
