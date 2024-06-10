@@ -12,11 +12,11 @@ Este curso de introdução à programação é oferecido para estudantes de vár
 
 Assista ao vídeo porque aprender a programar.
 
-::embed{src="https://www.youtube.com/embed/mHW1Hsqlp6A?si=mBpaEFy2eqyBYOaM"}
+<!-- ::embed{src="https://www.youtube.com/embed/mHW1Hsqlp6A?si=mBpaEFy2eqyBYOaM"} -->
 
 Agora, convidamos você a assistir o vídeo de apresentação deste curso:
 
-::embed{src="https://www.youtube.com/embed/LmLlBnxs4x4"}
+<!-- ::embed{src="https://www.youtube.com/embed/LmLlBnxs4x4"} -->
 
 ## Objetivos do curso
 
@@ -44,11 +44,11 @@ Veja agora alguns exemplos de problemas a serem resolvidos e algoritmos para res
 
 - **Primeiros algoritmos** - nesse vídeo falamos de dois problemas e chegamos a um algoritmo para a solução de cada um dos problemas. Ao final do segundo problema pedimos que proponha um problema similar, que se resolva da mesma maneira.
 
-::embed{src="https://www.youtube.com/embed/1o2WbsiwdcY"}
+<!-- ::embed{src="https://www.youtube.com/embed/1o2WbsiwdcY"} -->
 
 - **Primeiros algoritmos** - mais um exemplo - nesse outro vídeo estudamos um problema menos trivial, que exige um maior esforço de busca da solução.
 
-::embed{src="https://www.youtube.com/embed/TN9oLmvvxnA"}
+<!-- ::embed{src="https://www.youtube.com/embed/TN9oLmvvxnA"} -->
 
 ### Funcionamento do computador, Linguagem de programação e Execução de programas
 
@@ -56,7 +56,7 @@ Para ter uma ideia melhor de como os programas são executados pelo computador, 
 
 Assista ao vídeo “Como funciona um computador (animação)”:
 
-::embed{src="https://www.youtube.com/embed/RRBO9KYuN28"}
+<!-- ::embed{src="https://www.youtube.com/embed/RRBO9KYuN28"} -->
 
 Agora, leia um pouco mais sobre o assunto e sobre como um programa de computador pode ser executado em:
 
@@ -72,7 +72,7 @@ Agora você já sabe que programas são escritos em uma linguagem de programaç�
 - [Interpretadores, compiladores e tradutores](http://www.inf.ufsc.br/~j.barreto/cca/arquitet/arq4.htm)
 - [Qual a diferença entre código compilado e código interpretado?](https://youtu.be/fzNd_PD4_n4)
 
-::embed{src="https://www.youtube.com/embed/fzNd_PD4_n4"}
+<!-- ::embed{src="https://www.youtube.com/embed/fzNd_PD4_n4"} -->
 
 Neste curso, adotaremos a linguagem de programação Python. Ela é considerada uma excelente linguagem para iniciantes em programação, e também é uma linguagem amplamente utilizada com propósitos comerciais, acadêmicos e de pesquisa.
 
@@ -102,10 +102,10 @@ Nos links abaixo estão instruções que podem te ajudar no processo de instala�
 
 Caso você não tenha conseguido instalar, peça ajuda à equipe de monitores ou ao seu professor. Consulte do vídeo tutorial de instalação do Python:
 
-::embed{src="https://www.youtube.com/embed/VGhJFcSxSvg"}
+<!-- ::embed{src="https://www.youtube.com/embed/VGhJFcSxSvg"} -->
 
 Uma vez instalado o Python, podemos abrir o programa IDLE, que vem com o Python, no seu computador. Basta usar a busca do sistema operacional, que geralmente está na barra de tarefas, na parte de baixo da tela do seu computador. Digite IDLE, e deve aparecer para você o link para abrir o programa de que estamos falando. Clique nele. Aí você está pronto para acompanhar as próximas etapas que vamos seguir para escrever seu primeiro código.
 
 Os monitores também prepararam um vídeo mostrando como abrir e começar a usar o IDLE. Ele está disponível aqui:
 
-::embed{src="https://www.youtube.com/embed/p0pQ0k16XXQ"}
+<!-- ::embed{src="https://www.youtube.com/embed/p0pQ0k16XXQ"} -->
