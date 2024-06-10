@@ -12,8 +12,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
   const { content } = await getMarkdown(params.slug)
   const md = await processMarkdown(content)
 
-  console.log(md.headings)
-
   return (
     <Container>
       <div
