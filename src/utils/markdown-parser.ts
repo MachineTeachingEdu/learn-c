@@ -35,11 +35,16 @@ function remarkEmbed() {
         const hast = h(node.name, node.attributes as EmbedAttributes)
 
         data.hName = hast.tagName
-        data.hProperties = {
-          ...hast.properties,
-          allow:
-            'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share',
-          referrerPolicy: 'strict-origin-when-cross-origin',
+        data.hProperties = hast.properties
+
+        if (hast.properties.src) {
+          data.hProperties = {
+            ...data.hProperties,
+            allow:
+              'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share',
+            referrerPolicy: 'strict-origin-when-cross-origin',
+            loading: 'lazy',
+          }
         }
       }
     })
@@ -70,6 +75,7 @@ const getParser = () =>
               frameBorder: 0,
               allow: props.allow,
               referrerPolicy: props.referrerPolicy,
+              loading: props.loading,
             }),
           ]),
       },
