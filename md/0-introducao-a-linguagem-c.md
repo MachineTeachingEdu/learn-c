@@ -8,7 +8,7 @@ title: 02. Introdução a Linguagem C
 
 ```c
 #include <stdio.h>
-
+fasdf
 int main() {
   int hello = 1;
   printf("%d", hello)
