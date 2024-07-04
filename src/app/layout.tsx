@@ -6,6 +6,7 @@ import { Inter } from 'next/font/google'
 import { Toaster } from 'react-hot-toast'
 import { getMarkdowns } from '@/utils/get-markdown'
 import { DataProvider } from '@/hooks/use-data'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,6 +28,7 @@ export default async function RootLayout({
           {children}
           <Toaster />
         </DataProvider>
+        <Script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" />
       </body>
     </html>
   )

@@ -26,6 +26,10 @@ type EmbedAttributes = {
   title?: string
 }
 
+type AccordionAttributes = {
+  title: string
+}
+
 function remarkEmbed() {
   return function (tree: Root): void {
     visit(tree, (n) => {
@@ -46,6 +50,14 @@ function remarkEmbed() {
             loading: 'lazy',
           }
         }
+      }
+
+      if (node.type === 'containerDirective' && node.name === 'accordion') {
+        const data = node.data || (node.data = {})
+        const hast = h(node.name, node.attributes as AccordionAttributes)
+
+        data.hName = hast.tagName
+        data.hProperties = hast.properties
       }
     })
   }
