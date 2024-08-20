@@ -18,13 +18,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
         className={styles.markdownContainer}
         dangerouslySetInnerHTML={{ __html: md.html }}
       />
-      <iframe
-        // frameBorder="0"
-        title="JDoodle"
-        height="600px"
-        src="https://onecompiler.com/embed/c/42j68q6wt"
-        width="100%"
-      />
     </Container>
   )
 }

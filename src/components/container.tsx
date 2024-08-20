@@ -19,7 +19,7 @@ function ListItem(props: ListItemProps) {
   return (
     <li>
       <Link
-        className={`no-underline ${props.isActive ? 'font-bold text-blue-900' : 'text-black'}`}
+        className={`no-underline ${props.isActive && 'font-medium text-blue-900'}`}
         href={`/aulas/${props.markdown.slug}`}
       >
         {props.markdown.data.title}
@@ -52,7 +52,7 @@ export default function Container({ children }: ContainerProps) {
           </button>
         </div>
         <nav
-          className={`absolute bg-white ${opened ? 'top-16' : '-top-full'} left-0 z-20 w-full px-3 pb-3 shadow-md xl:static xl:top-auto xl:h-full xl:min-w-[350px]`}
+          className={`absolute bg-white ${opened ? 'top-16' : '-top-full'} left-0 z-20 w-full px-3 pb-3 shadow-md xl:static xl:top-auto xl:h-full xl:min-w-[400px]`}
         >
           <hr />
           <h2 className="mt-3 text-xl font-bold">Lista de Aulas</h2>
