@@ -21,3 +21,15 @@ Os parâmetros são fundamentais para a interação entre uma função e o códi
 O retorno de uma função permite que você envie uma informação de volta para o código que chamou a função. Isso pode incluir diferentes tipos de valores, dependendo do que a função deve fornecer. Assista ao vídeo a seguir para aprender a sintaxe e as práticas recomendadas para retornar valores de funções.
 
 ::embed{src="https://www.youtube.com/embed/E3zGQKc0BX4?si=VNNuIeYTenHE2lru"}
+
+## Recursão com funções
+
+Recursão é uma técnica onde uma função se chama diretamente dentro de sua própria definição, funcionando como um loop. Essa abordagem permite resolver problemas complexos ao dividi-los em subproblemas menores e mais gerenciáveis, continuando até que uma condição de parada seja atendida. No vídeo a seguir, você aprenderá, de forma prática, como criar e utilizar funções recursivas para resolver problemas de maneira eficiente.
+
+::embed{src="https://www.youtube.com/embed/1kBiqUCN888?si=0RuGDA-j-k4khBOp"}
+
+## Exercícios
+
+1. Implemente uma **função recursiva** que retorna a soma de uma sequência de fibonacci.
+
+2. Implemente uma função que retorna raízes de uma função de 2° grau. Lembre-se que a função de 2° grau é dado por **f(x) = ax² + bx + c**, onde a, b e c são as constantes do seu programa e, portanto, serão os parâmetros da sua função.]
