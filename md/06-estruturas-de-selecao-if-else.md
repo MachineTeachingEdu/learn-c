@@ -17,7 +17,7 @@ Agora que você aprendeu os operadores lógicos e relacionais, vamos introduzir 
 2. Leia o preço de um produto e a condição de pagamento e imprima os valores a serem pagos,
 considerando a seguinte tabela:
 
-[Imgur](https://imgur.com/0KWDNDW)
+![Imgur](https://i.imgur.com/0KWDNDW.png)
 
 3.  Leia o número do mês do ano (1 a 12) e mostre o nome do mês por extenso. Se o número for
 inválido, imprima "Mês inválido".
