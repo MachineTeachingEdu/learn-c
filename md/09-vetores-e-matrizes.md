@@ -1,8 +1,8 @@
 ---
-id: 10
-title: 10. Vetores e Matrizes
+id: 9
+title: 09. Vetores e Matrizes
 ---
-# 10. Vetores e Matrizes
+# 09. Vetores e Matrizes
 
 Vetores e Matrizes são estruturas de dados fundamentais que permitem o armazenamento de uma sequência de elementos do mesmo tipo em uma única variável. Eles são amplamente utilizados para gerenciar listas de dados, como uma lista de contatos, de forma temporária ou persistente.
 

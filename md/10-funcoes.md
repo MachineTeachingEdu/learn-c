@@ -1,8 +1,8 @@
 ---
-id: 11
-title: 11. Funções
+id: 10
+title: 10. Funções
 ---
-# 11. Funções
+# 10. Funções
 
 Dentre as caracteristicas da programação moderna, podemos destacar as subrotinas, comumente chamadas de função. As funções podem ter várias finalidades, como modularização, reutilização e organização.
 
