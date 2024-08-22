@@ -1,4 +1,5 @@
 ---
+id: 5
 title: 05. Operadores lógicos e relacionais
 ---
 
@@ -17,3 +18,5 @@ Nesta aula, você aprenderá a criar comparações lógicas utilizando os operad
 ::embed{src="https://www.youtube.com/embed/ACSsPjdCaOg?si=Q5UbnZCVLb_p0NCo"}
 
 ## Exercícios
+
+[]
