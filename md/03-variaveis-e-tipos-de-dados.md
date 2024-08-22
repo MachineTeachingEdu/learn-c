@@ -20,3 +20,5 @@ Você provavelmente conhece os tipos de dados primitivos, como inteiro, ponto fl
 ::embed{src="https://www.youtube.com/embed/DPv2qG1XGp4?si=TbDi9YQNDmPZxvBK"}
 
 ## Exercícios
+
+1. Crie um programa que pede o nome e idade e depois imprime. Dica: Para scanear um dado do usuário use o `scanf`.
