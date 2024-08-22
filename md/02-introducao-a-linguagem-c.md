@@ -22,3 +22,7 @@ No vídeo abaixo, você aprenderá mais sobre compiladores e como é possível c
 Nessa video-aula, você aprenderá a construir seu primeiro programa na linguagem C.
 
 ::embed{src="https://www.youtube.com/embed/E7XAkCL6Ut8?si=N6fSFsW-bJUMw4QG"}
+
+## Exercícios
+
+1. Faça um programa que imprime seu nome, idade e curso. Dica: use `printf` para imprimir.
