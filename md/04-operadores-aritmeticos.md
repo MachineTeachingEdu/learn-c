@@ -5,9 +5,9 @@ title: 04. Operadores Aritméticos
 
 # 04. Operadores Aritméticos
 
-Assim como na calculadora, podemos realizar operações aritméticas na programação. Em C, você pode realizar operações matemáticas básicas, como adição (+), subtração (-), multiplicação (*), divisão (/) e módulo (%). 
+Assim como em uma calculadora, a programação permite realizar operações aritméticas básicas. Na linguagem C, você pode executar operações como adição (+), subtração (-), multiplicação (*), divisão (/) e módulo (%).
 
-No vídeo abaixo, você aprenderá um pouco mais sobre operadores aritméticos na linguagem C.
+No vídeo a seguir, você aprenderá mais sobre como utilizar operadores aritméticos em C e como aplicar essas operações em seus programas.
 
 ::embed{src="https://www.youtube.com/embed/SXAxAlGNcqE?si=_ZMsMv41TrftkD0V"}
 
