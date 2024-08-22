@@ -22,7 +22,7 @@ O retorno de uma função permite que você envie uma informação de volta para
 
 ::embed{src="https://www.youtube.com/embed/E3zGQKc0BX4?si=VNNuIeYTenHE2lru"}
 
-## Recursão com funções
+## Recursividade
 
 Recursão é uma técnica onde uma função se chama diretamente dentro de sua própria definição, funcionando como um loop. Essa abordagem permite resolver problemas complexos ao dividi-los em subproblemas menores e mais gerenciáveis, continuando até que uma condição de parada seja atendida. No vídeo a seguir, você aprenderá, de forma prática, como criar e utilizar funções recursivas para resolver problemas de maneira eficiente.
 
