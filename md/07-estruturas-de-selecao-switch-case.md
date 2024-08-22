@@ -4,7 +4,7 @@ title: 07. Estruturas de Seleção (switch-case)
 ---
 # 07. Estruturas de Seleção (ou decisão)
 
-Agora que você aprendeu os operadores lógicos e relacionais, vamos introduzir as estruturas de seleção. São eles que vão de fato criar ramificações no seu programa. A partir dessas estruturas, o seu programa vai saber exatamente o que deve fazer de acordo de determinada condição.
+Após entender os operadores lógicos e relacionais, é hora de explorar as estruturas de seleção. Essas estruturas permitem criar ramificações em seu programa, permitindo que ele tome decisões com base em condições específicas. Com as estruturas de seleção, você pode definir caminhos distintos de execução, ajustando o comportamento do seu programa conforme as condições definidas.
 
 ::embed{src="https://www.youtube.com/embed/MGUpDTEc3SM?si=RCd8UPx12BJfzoc2"}
 
