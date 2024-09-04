@@ -1,6 +1,5 @@
 ---
-id: 8
-title: 08. Estruturas de Repetição
+title: 06. Estruturas de Repetição
 ---
 # 08. Estruturas de Repetição
 

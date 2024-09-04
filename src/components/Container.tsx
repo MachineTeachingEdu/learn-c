@@ -1,37 +1,13 @@
 'use client'
 
-import { MarkdownMetadata, useData } from '@/hooks/use-data'
-import Link from 'next/link'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import { usePathname } from 'next/navigation'
 import { ReactNode, useState } from 'react'
 
 export type ContainerProps = {
   children: ReactNode
 }
 
-type ListItemProps = {
-  isActive: boolean
-  markdown: MarkdownMetadata
-}
-
-function ListItem(props: ListItemProps) {
-  return (
-    <li>
-      <Link
-        className={`no-underline ${props.isActive && 'font-medium text-blue-900'}`}
-        href={`/aulas/${props.markdown.slug}`}
-      >
-        {props.markdown.data.title}
-      </Link>
-    </li>
-  )
-}
-
 export default function Container({ children }: ContainerProps) {
-  const { markdowns } = useData()
-  const pathname = usePathname()
-
   const [opened, setOpened] = useState(false)
 
   return (
@@ -56,15 +32,6 @@ export default function Container({ children }: ContainerProps) {
         >
           <hr />
           <h2 className="mt-3 text-xl font-bold">Lista de Aulas</h2>
-          <ul className="my-2 list-none pl-4 text-lg">
-            {markdowns.map((markdown) => (
-              <ListItem
-                key={markdown.slug}
-                isActive={pathname === `/aulas/${markdown.slug}`}
-                markdown={markdown}
-              />
-            ))}
-          </ul>
         </nav>
       </div>
       <div className="mx-auto h-screen w-full overflow-y-scroll">

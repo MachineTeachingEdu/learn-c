@@ -4,9 +4,9 @@ import 'highlight.js/styles/atom-one-dark.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Toaster } from 'react-hot-toast'
-import { getMarkdowns } from '@/utils/get-markdown'
-import { DataProvider } from '@/hooks/use-data'
 import Script from 'next/script'
+import { generateMarkdownMetadata } from '@/utils/markdown-metadata'
+import { DataProvider } from '@/hooks/use-data'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,11 +20,12 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const markdowns = await getMarkdowns()
+  const markdownMetadatas = await generateMarkdownMetadata()
+
   return (
     <html lang="en">
       <body className={`${inter.className} overflow-y-hidden bg-gray-50`}>
-        <DataProvider markdowns={markdowns}>
+        <DataProvider markdownMetadatas={markdownMetadatas}>
           {children}
           <Toaster />
         </DataProvider>

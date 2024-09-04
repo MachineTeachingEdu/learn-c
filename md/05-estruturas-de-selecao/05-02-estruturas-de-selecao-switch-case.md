@@ -1,5 +1,4 @@
 ---
-id: 7
 title: 07. Estruturas de Seleção (switch-case)
 ---
 # 07. Estruturas de Seleção (ou decisão)

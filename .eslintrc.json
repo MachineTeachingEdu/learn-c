@@ -25,6 +25,7 @@
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "no-restricted-syntax": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -35,13 +36,15 @@
         "tsx": "never"
       }
     ],
+    "react/jsx-no-constructed-context-values": "off",
     "react/jsx-props-no-spreading": "off",
     "react/require-default-props": "off",
     "react/no-array-index-key": "off",
     "tailwindcss/migration-from-tailwind-2": "off",
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/no-static-element-interactions": "off",
-    "react/destructuring-assignment": "off"
+    "react/destructuring-assignment": "off",
+    "no-continue": "off"
   },
   "settings": {
     "import/resolver": {

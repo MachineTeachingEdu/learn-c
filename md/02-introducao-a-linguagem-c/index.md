@@ -1,5 +1,4 @@
 ---
-id: 2
 title: 02. Introdução a Linguagem C
 ---
 # 02. Introdução a Linguagem C

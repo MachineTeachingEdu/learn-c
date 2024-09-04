@@ -1,5 +1,4 @@
 ---
-id: 5
 title: 05. Operadores lógicos e relacionais
 ---
 

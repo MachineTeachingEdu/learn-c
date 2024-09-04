@@ -1,29 +1,30 @@
 'use client'
 
-/* eslint-disable react/jsx-no-constructed-context-values */
 import { ReactNode, createContext, useContext } from 'react'
 
-export type MarkdownMetadata = {
-  data: {
-    title: string
-  }
-  slug: string
+type MarkdownMetadata = {
+  title: string
+  path: string
+  children: MarkdownMetadata[]
 }
 
 type DataContextType = {
-  markdowns: MarkdownMetadata[]
+  markdownMetadatas: MarkdownMetadata[]
 }
 
 export const DataContext = createContext<DataContextType>({} as DataContextType)
 
 type DataProviderProps = {
   children: ReactNode
-  markdowns: MarkdownMetadata[]
+  markdownMetadatas: MarkdownMetadata[]
 }
 
-export function DataProvider({ children, markdowns }: DataProviderProps) {
+export function DataProvider({
+  children,
+  markdownMetadatas,
+}: DataProviderProps) {
   return (
-    <DataContext.Provider value={{ markdowns }}>
+    <DataContext.Provider value={{ markdownMetadatas }}>
       {children}
     </DataContext.Provider>
   )

@@ -1,5 +1,4 @@
 ---
-id: 1
 title: 01. Algoritmos e Programação
 ---
 # 01. Algoritmos e Programação
