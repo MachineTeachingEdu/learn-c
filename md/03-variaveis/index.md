@@ -20,4 +20,29 @@ Você provavelmente já conhece os tipos de dados primitivos, como inteiros, pon
 
 ## Exercícios
 
-1. Crie um programa que pede o nome e idade e depois imprime. Dica: Para scanear um dado do usuário use o `scanf`.
+1. Crie um programa que pede a idade e altura e depois imprime. Dica: Para scanear um dado do usuário use o `scanf`.
+
+:::accordion{title="Solução"}
+```c
+#include <stdio.h> // Inclui a biblioteca padrão do C para funções de entrada e saída
+
+int main() {
+    int idade;    // Declara uma variável para armazenar a idade
+    float altura; // Declara uma variável para armazenar a altura
+
+    // Solicita ao usuário que insira a idade
+    printf("Digite sua idade: ");
+    scanf("%d", &idade); // Lê a idade fornecida pelo usuário e armazena na variável 'idade'
+
+    // Solicita ao usuário que insira sua altura
+    printf("Digite sua altura (em metros): ");
+    scanf("%f", &altura); // Lê a altura fornecida pelo usuário e armazena na variável 'altura'
+
+    // Imprime a idade e a altura fornecidos pelo usuário
+    printf("Idade: %d\n", idade);
+    printf("Altura: %f metros\n", altura);
+
+    return 0; // Retorna 0 para indicar que o programa terminou com sucesso
+}
+```
+:::

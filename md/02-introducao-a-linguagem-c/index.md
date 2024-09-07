@@ -6,7 +6,7 @@ title: 02. Introdução a Linguagem C
 A partir de agora, você será introduzido à linguagem C, mas primeiro precisamos elucidar alguns conceitos importantes relacionados diretamente a linguagem. Nesse capítulo abordaremos:
 
 - [Compiladores](#compiladores)
-- [Primeiro Programa em C](#primeiro-pragrama-em-c)
+- [Primeiro Programa em C](#primeiro-programa-em-c)
 
 ## Compiladores
 
@@ -25,3 +25,19 @@ Nessa video-aula, você aprenderá a construir seu primeiro programa na linguage
 ## Exercícios
 
 1. Faça um programa que imprime seu nome, idade e curso. Dica: use `printf` para imprimir.
+
+:::accordion{title="Solução"}
+**OBS:** No código abaixo, os textos que vem logo após `//` servem apenas para designar um comentário. Leia com atenção.
+```c
+#include <stdio.h> // Inclui a biblioteca padrão do C, que fornece funções para entrada e saída, como printf.
+
+int main() { // Define a função principal do programa, que é o ponto de entrada para execução.
+    // Imprime uma string formatada na tela. 
+    // A string contém informações sobre o nome, idade e curso.
+    printf("Nome: João, Idade: 21, Curso: Sistemas de Informação");
+    
+    // Retorna 0 para indicar que o programa terminou sua execução com sucesso.
+    return 0;
+}
+```
+:::

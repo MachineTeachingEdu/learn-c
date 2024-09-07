@@ -15,3 +15,8 @@ Nesta aula, você aprenderá a criar comparações lógicas utilizando os operad
 ## Operadores lógicos
 
 ::embed{src="https://www.youtube.com/embed/ACSsPjdCaOg?si=Q5UbnZCVLb_p0NCo"}
+
+## Exercícios
+
+Calma pequeno gafanhoto! Para utilizar os operadores acima com mais facilidade, é preciso aprender o próximo tópico onde abordaremos sobre estruturas de seleção.
+

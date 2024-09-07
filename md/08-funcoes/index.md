@@ -29,6 +29,78 @@ Recursão é uma técnica onde uma função se chama diretamente dentro de sua p
 
 ## Exercícios
 
-1. Implemente uma **função recursiva** que retorna a soma de uma sequência de fibonacci.
+###### Exercício 1
 
-2. Implemente uma função que retorna raízes de uma função de 2° grau. Lembre-se que a função de 2° grau é dado por **f(x) = ax² + bx + c**, onde a, b e c são as constantes do seu programa e, portanto, serão os parâmetros da sua função.]
+Implemente uma função que retorna raízes de uma função de 2° grau. Lembre-se que a função de 2° grau é dado por **f(x) = ax² + bx + c**, onde a, b e c são as constantes do seu programa e, portanto, serão os parâmetros da sua função.
+
+:::accordion{title="Solução"}
+```c
+#include <stdio.h>
+#include <math.h>  // Para a função sqrt()
+
+void encontrarRaizes(double a, double b, double c) {
+    double delta = b * b - 4 * a * c;
+
+    if (delta > 0) {
+        double x1 = (-b + sqrt(delta)) / (2 * a);
+        double x2 = (-b - sqrt(delta)) / (2 * a);
+        
+        printf("Raízes reais distintas:\n");
+        printf("x1 = %f\n", x1);
+        printf("x2 = %f\n", x2);
+    } else if (delta == 0) {
+        double x = -b / (2 * a);
+        printf("Raiz real:\n");
+        printf("x = %f\n", x);
+    } else {
+        printf("Não existem raízes reais para esses valores\n");
+    }
+}
+
+int main() {
+    float a, b, c;
+    
+    printf("Digite os coeficientes a, b e c da equação ax^2 + bx + c:\n");
+    printf("a = ");
+    scanf("%f", &a);
+    printf("b = ");
+    scanf("%f", &b);
+    printf("c = ");
+    scanf("%f", &c);
+    
+    if (a == 0) {
+        printf("O coeficiente 'a' deve ser diferente de zero para que a equação seja quadrática.\n");
+    } else {
+        encontrarRaizes(a, b, c);
+    }
+    
+    return 0;
+}
+```
+:::
+
+###### Exercício 2
+
+Implemente uma **função recursiva** que retorna o n-ésimo número da sequência de fibonacci.
+
+:::accordion{title="Solução"}
+```c
+#include <stdio.h>
+
+int fib(int n) {
+    if (n <= 1)
+        return n
+    return fib(n - 2) + fib(n - 1)
+}
+
+int main() {
+    int n, resultado;
+
+    printf("Digite o valor para n: ");
+    scanf("%d", &n);
+
+    resultado = fib(n);
+    printf("O %d° número é %d", n, resultado);
+}
+```
+:::

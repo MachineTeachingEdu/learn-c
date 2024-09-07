@@ -9,11 +9,11 @@
   }
 
   h1, h2, h3, h4, h5, h6, p, ul, ol, pre, code, iframe {
-    margin-bottom: theme('margin.4');
+    margin-bottom: 0.7rem;
   }
 
   pre {
-    border-radius: theme('borderRadius.md');
+    border-radius: 15px;
     overflow-x: auto;
   }
 
@@ -26,12 +26,12 @@
   }
 
   code {
-    font-size: theme('fontSize.base');
+    font-size: 1rem;
   }
 
   p, li {
     margin-top: 0;
-    font-size: theme('fontSize.lg');
+    font-size: 1.15rem;
   }
  
   h1 {
@@ -51,15 +51,15 @@
   }
 
   h5 {
-    font-size: theme('fontSize.lg');
+    font-size: 1.15rem;
   }
 
   h6 {
-    font-size: theme('fontSize.base');
+    font-size: 1rem;
   }
 
   li {
-    margin-bottom: theme('margin.2');
+    margin-bottom: 0.2rem;
   }
 
   div:has(> iframe) {
@@ -68,7 +68,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: theme('margin.4');
+    margin-bottom: 0.7rem;
     position: relative;
     padding-bottom: 56.25%;
     height: 0;

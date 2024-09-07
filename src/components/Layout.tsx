@@ -4,9 +4,10 @@ import { AppProvider, Navigation } from '@toolpad/core/AppProvider'
 import { DashboardLayout } from '@toolpad/core/DashboardLayout'
 import React, { ReactNode } from 'react'
 import { MarkdownMetadata, useData } from '@/hooks/use-data'
-import { Box, createTheme } from '@mui/material'
+import { Box, CssBaseline } from '@mui/material'
 import { useRouter } from 'next/navigation'
 import { FaHome } from 'react-icons/fa'
+import layoutTheme from '@/utils/ui-theme/layout-theme'
 import Branding from './Branding'
 
 type CustomNavigation = {
@@ -23,22 +24,6 @@ const fixNavigationSegment = (
     segment,
     children: children.length ? fixNavigationSegment(children) : undefined,
   }))
-
-const theme = createTheme({
-  cssVariables: {
-    colorSchemeSelector: 'data-toolpad-color-scheme',
-  },
-  colorSchemes: { light: true, dark: true },
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 600,
-      md: 900,
-      lg: 1200,
-      xl: 1536,
-    },
-  },
-})
 
 type LayoutProps = {
   children: ReactNode
@@ -80,7 +65,7 @@ export default function Layout({ window, pathname, children }: LayoutProps) {
         logo: <Branding />,
         title: '',
       }}
-      theme={theme}
+      theme={layoutTheme}
       navigation={markdownSegments}
       window={window?.()}
     >
@@ -96,6 +81,7 @@ export default function Layout({ window, pathname, children }: LayoutProps) {
           {children}
         </Box>
       </DashboardLayout>
+      <CssBaseline />
     </AppProvider>
   )
 }

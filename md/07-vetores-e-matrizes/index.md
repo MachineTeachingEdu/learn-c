@@ -23,11 +23,113 @@ Matrizes em C são como tabelas bidimensionais que armazenam múltiplos valores 
 
 ## Exercícios
 
-1. Leia um vetor v de 10 inteiros e gere outro vetor w contendo os elementos de v ao quadrado.
+###### Exercício 1
+
+Leia um vetor v de 10 inteiros e gere outro vetor w contendo os elementos de v ao quadrado.
 Imprima w.
 
-2. Leia dois vetores de inteiros v e w (máximo de 10 números). Os vetores v e w podem ter
-quantidades diferentes de números. Ao final, gere o vetor k com os números em comum de v e w.
-Imprima o vetor k.
+:::accordion{title="Solução"}
+```c
+#include <stdio.h>
 
-3.  Leia uma matriz quadrada de inteiros m (5 x 5) e verifique se ela é simétrica, ou seja, se os valores da linha 1 são iguais aos da coluna 1, os da linha 2 são iguais aos da coluna 2, e assim por diante. Ao final imprimir “É simétrica” ou “Não é simétrica”.
+int main() {
+    int v[10], w[10];
+    
+    printf("Digite 10 inteiros:\n");
+    for (int i = 0; i < 10; i++) {
+        printf("v[%d] = ", i);
+        scanf("%d", &v[i]);
+    }
+    
+    for (int i = 0; i < 10; i++) {
+        w[i] = v[i] * v[i];
+    }
+    
+    printf("Os elementos do vetor w (quadrado dos elementos de v) são:\n");
+    for (int i = 0; i < 10; i++) {
+        printf("w[%d] = %d\n", i, w[i]);
+    }
+    
+    return 0;
+}
+```
+:::
+
+###### Exercício 2
+
+Leia uma matriz quadrada de inteiros m (4 x 4) e exiba os elementos que estão em linhas pares e
+colunas ímpares.
+
+:::accordion{title="Solução"}
+```c
+#include <stdio.h>
+
+int main() {
+    int matriz[4][4];
+    
+    printf("Digite os elementos da matriz 4x4:\n");
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            printf("Elemento [%d][%d]: ", i, j);
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+
+    printf("Elementos em linhas pares e colunas ímpares:\n");
+    for (int i = 0; i < 4; i++) {
+        if (i % 2 == 0) {
+            for (int j = 0; j < 4; j++) {
+                if (j % 2 != 0) {
+                    printf("Elemento na linha %d, coluna %d: %d\n", i + 1, j + 1, matriz[i][j]);
+                }
+            }
+        }
+    }
+
+    return 0;
+}
+```
+:::
+
+###### Exercício 3
+
+Leia uma matriz quadrada de inteiros m (5 x 5) e verifique se ela é simétrica, ou seja, se os valores da linha 1 são iguais aos da coluna 1, os da linha 2 são iguais aos da coluna 2, e assim por diante. Ao final imprimir “É simétrica” ou “Não é simétrica”.
+
+:::accordion{title="Solução"}
+```c
+#include <stdio.h>
+
+int main() {
+    int matriz[5][5];
+    int simetrica = 1; // 1 significa que é simétrica, 0 significa que não é simétrica
+
+    printf("Digite os elementos da matriz 5x5:\n");
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            printf("Elemento [%d][%d]: ", i, j);
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            if (matriz[i][j] != matriz[j][i]) {
+                simetrica = 0; // Define como não simétrica
+                break; // Sai do loop interno
+            }
+        }
+        if (simetrica == 0) {
+            break; // Sai do loop externo
+        }
+    }
+
+    if (simetrica == 1) {
+        printf("É simétrica\n");
+    } else {
+        printf("Não é simétrica\n");
+    }
+
+    return 0;
+}
+```
+:::

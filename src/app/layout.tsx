@@ -11,6 +11,8 @@ import { Toaster } from 'react-hot-toast'
 import { generateMarkdownMetadata } from '@/utils/markdown-metadata'
 import { DataProvider } from '@/hooks/use-data'
 
+import '../globals.css'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
