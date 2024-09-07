@@ -16,15 +16,15 @@ export async function generateStaticParams() {
 
 export default async function Page({ params }: { params: { slug: string[] } }) {
   const { content } = await getMarkdownBySlug(params.slug)
-  // const md = await processMarkdown(content)
+  const md = await processMarkdown(content)
 
   return (
     <Layout pathname={`/${params.slug.join('/')}`}>
-      {/* <div
+      <div
         className={styles.markdownContainer}
         dangerouslySetInnerHTML={{ __html: md.html }}
-      /> */}
-      <Markdown text={content} />
+      />
+      {/* <Markdown text={content} /> */}
     </Layout>
   )
 }

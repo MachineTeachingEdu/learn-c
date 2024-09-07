@@ -92,12 +92,14 @@ const getParser = () =>
           ]),
       },
     })
+    // .use(rehypeSanitize)
     .use(rehypeHighlight)
+    .use(rehypeStringify)
 
 const parser = getParser()
 
 export async function processMarkdown(text: string): Promise<{
-  data: string
+  html: string
   headings: { value: string; id: string }[]
 }> {
   const file = await parser.process(text)
@@ -106,7 +108,7 @@ export async function processMarkdown(text: string): Promise<{
     : []
 
   return {
-    data: String(file),
+    html: String(file),
     headings: headings.map((heading) => ({
       value: heading.value,
       id: heading.data.id,
