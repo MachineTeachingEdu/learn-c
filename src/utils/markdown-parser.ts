@@ -92,7 +92,6 @@ const getParser = () =>
           ]),
       },
     })
-    // .use(rehypeSanitize)
     .use(rehypeHighlight)
     .use(rehypeStringify)
 

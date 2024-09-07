@@ -1,4 +1,3 @@
-import '@/globals.scss'
 import 'highlight.js/styles/atom-one-dark.css'
 
 import '@fontsource/roboto/300.css'
