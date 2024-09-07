@@ -9,7 +9,6 @@ import '@fontsource/roboto/700.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Toaster } from 'react-hot-toast'
-import Script from 'next/script'
 import { generateMarkdownMetadata } from '@/utils/markdown-metadata'
 import { DataProvider } from '@/hooks/use-data'
 
@@ -26,7 +25,6 @@ export default async function RootLayout({
   children: React.ReactNode
 }>) {
   const markdownMetadatas = await generateMarkdownMetadata()
-
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
@@ -34,7 +32,6 @@ export default async function RootLayout({
           {children}
           <Toaster />
         </DataProvider>
-        <Script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" />
       </body>
     </html>
   )
