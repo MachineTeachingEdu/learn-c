@@ -27,7 +27,7 @@ Nessa video-aula, você aprenderá a construir seu primeiro programa na linguage
 1. Faça um programa que imprime seu nome, idade e curso. Dica: use `printf` para imprimir.
 
 :::accordion{title="Solução"}
-**OBS:** No código abaixo, os textos que vem logo após `//` servem apenas para designar um comentário. Leia com atenção.
+**OBS:** No código abaixo, os textos que vem logo após `//` servem apenas para designar um comentário. Leia com atenç~
 ```c
 #include <stdio.h> // Inclui a biblioteca padrão do C, que fornece funções para entrada e saída, como printf.
 

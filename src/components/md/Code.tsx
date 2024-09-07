@@ -20,7 +20,12 @@ export function Pre({
   },
 }: PreProps) {
   return (
-    <Box component="pre">
+    <Box
+      component="pre"
+      sx={{
+        whiteSpace: 'pre-wrap',
+      }}
+    >
       <Box component="code" className={className} m={0}>
         {children}
       </Box>
