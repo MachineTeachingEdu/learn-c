@@ -2,12 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { cache } from 'react'
-
-type MarkdownMetadata = {
-  title: string
-  path: string
-  children: MarkdownMetadata[]
-}
+import { MarkdownMetadata } from '@/hooks/use-data'
 
 function getMarkdownMetadatas(currentPath: string): MarkdownMetadata[] {
   const markdownMetadata: MarkdownMetadata[] = []
@@ -31,6 +26,7 @@ function getMarkdownMetadatas(currentPath: string): MarkdownMetadata[] {
       markdownMetadata.push({
         title: data.title,
         path: realPath,
+        segment: realPath.split('/').pop() || '',
         children: getMarkdownMetadatas(fullPath),
       })
       continue
@@ -40,6 +36,7 @@ function getMarkdownMetadatas(currentPath: string): MarkdownMetadata[] {
       markdownMetadata.push({
         title: data.title,
         path: realPath,
+        segment: realPath.split('/').pop() || '',
         children: [],
       })
     }

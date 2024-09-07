@@ -1,7 +1,9 @@
+import Layout from '@/components/Layout'
+
 export default function Page() {
   return (
-    <div>
+    <Layout pathname="/">
       <h1>Page</h1>
-    </div>
+    </Layout>
   )
 }

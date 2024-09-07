@@ -178,6 +178,10 @@ select {
 2. Remove default button styles.
 */
 
+.css-1d9cypr-MuiStack-root {
+  gap: 10px;
+}
+
 button,
 [type='button'],
 [type='reset'],

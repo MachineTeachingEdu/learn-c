@@ -1,7 +1,7 @@
 /* eslint-disable react/no-danger */
-import Container from '@/components/Container'
 import { generateMarkdownSlugs, getMarkdownBySlug } from '@/utils/markdown-slug'
 import { processMarkdown } from '@/utils/markdown-parser'
+import Layout from '@/components/Layout'
 import styles from './page.module.scss'
 
 export const dynamicParams = false
@@ -18,11 +18,11 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
   const md = await processMarkdown(content)
 
   return (
-    <Container>
+    <Layout pathname={`/${params.slug.join('/')}`}>
       <div
         className={styles.markdownContainer}
         dangerouslySetInnerHTML={{ __html: md.html }}
       />
-    </Container>
+    </Layout>
   )
 }

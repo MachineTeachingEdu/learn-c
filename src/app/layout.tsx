@@ -1,6 +1,11 @@
 import '@/globals.scss'
 import 'highlight.js/styles/atom-one-dark.css'
 
+import '@fontsource/roboto/300.css'
+import '@fontsource/roboto/400.css'
+import '@fontsource/roboto/500.css'
+import '@fontsource/roboto/700.css'
+
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Toaster } from 'react-hot-toast'
@@ -24,7 +29,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${inter.className} overflow-y-hidden bg-gray-50`}>
+      <body className={`${inter.className}`}>
         <DataProvider markdownMetadatas={markdownMetadatas}>
           {children}
           <Toaster />

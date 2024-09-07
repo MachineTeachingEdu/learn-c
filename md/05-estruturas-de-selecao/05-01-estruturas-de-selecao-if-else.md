@@ -1,5 +1,5 @@
 ---
-title: 06. Estruturas de Seleção (if-else)
+title: 06. if-else
 ---
 # 06. Estruturas de Seleção (ou decisão)
 

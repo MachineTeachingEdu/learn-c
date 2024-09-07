@@ -2,9 +2,10 @@
 
 import { ReactNode, createContext, useContext } from 'react'
 
-type MarkdownMetadata = {
+export type MarkdownMetadata = {
   title: string
   path: string
+  segment: string
   children: MarkdownMetadata[]
 }
 

@@ -1,5 +1,5 @@
 ---
-title: 07. Estruturas de Seleção (switch-case)
+title: 07. switch-case
 ---
 # 07. Estruturas de Seleção (ou decisão)
 

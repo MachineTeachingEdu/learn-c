@@ -10,9 +10,15 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@fontsource/roboto": "^5.0.14",
     "@mdx-js/loader": "^3.0.1",
     "@mdx-js/react": "^3.0.1",
+    "@mui/icons-material": "^6.0.2",
+    "@mui/material": "^6.0.2",
     "@next/mdx": "^14.2.3",
+    "@toolpad/core": "^0.5.2",
     "@vcarl/remark-headings": "^0.1.0",
     "flowbite": "^2.4.1",
     "flowbite-react": "^0.10.1",
