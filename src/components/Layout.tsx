@@ -9,6 +9,7 @@ import { useRouter } from 'next/navigation'
 import { FaHome } from 'react-icons/fa'
 import layoutTheme from '@/utils/ui-theme/layout-theme'
 import Branding from './Branding'
+import CCETHeader from './CCETHeader'
 
 type CustomNavigation = {
   title: string
@@ -70,6 +71,7 @@ export default function Layout({ window, pathname, children }: LayoutProps) {
       window={window?.()}
     >
       <DashboardLayout>
+        <CCETHeader />
         <Box
           sx={{
             display: 'flex',

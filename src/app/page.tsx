@@ -1,9 +1,19 @@
-import Layout from '@/components/Layout'
+import TestLayout from '@/components/CustomLayout'
+import { Typography } from '@mui/material'
 
 export default function Page() {
   return (
-    <Layout pathname="/">
-      <h1>Page</h1>
-    </Layout>
+    <TestLayout>
+      <Typography variant="h1">fasdfasd</Typography>
+      <Typography variant="h1">fasdfasd</Typography>
+      <Typography variant="h1">fasdfasd</Typography>
+      <Typography variant="h1">fasdfasd</Typography>
+      <Typography variant="h1">fasdfasd</Typography>
+      <Typography variant="h1">fasdfasd</Typography>
+      <Typography variant="h1">fasdfasd</Typography>
+      <Typography variant="h1">fasdfasd</Typography>
+      <Typography variant="h1">fasdfasd</Typography>
+      <Typography variant="h1">fasdfasd</Typography>
+    </TestLayout>
   )
 }

@@ -11,13 +11,13 @@ function Branding() {
         justifyContent: 'center',
       }}
     >
-      <Box component="img" src="/unirio.png" alt="Unirio logo" />
+      <Box component="img" width="40px" src="/unirio.png" alt="Unirio logo" />
       <Typography
         variant="h5"
         sx={{
           color: blue[700],
           fontWeight: 700,
-          display: { xs: 'none', md: 'block' },
+          // display: { xs: 'none', md: 'block' },
         }}
       >
         Técnicas de Programação I

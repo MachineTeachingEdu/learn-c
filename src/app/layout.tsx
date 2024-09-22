@@ -12,6 +12,8 @@ import { generateMarkdownMetadata } from '@/utils/markdown-metadata'
 import { DataProvider } from '@/hooks/use-data'
 
 import '../globals.css'
+import { CssBaseline } from '@mui/material'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,10 +30,31 @@ export default async function RootLayout({
   const markdownMetadatas = await generateMarkdownMetadata()
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://satccet.uniriotec.br/ccet/barrasccet.css"
+          media="screen"
+        />
+        <Script
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+          integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+          strategy="beforeInteractive"
+        />
+        <Script
+          defer
+          src="https://satccet.uniriotec.br/ccet/barrasccet.js"
+          type="text/javascript"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className={`${inter.className}`}>
         <DataProvider markdownMetadatas={markdownMetadatas}>
           {children}
           <Toaster />
+          <CssBaseline />
         </DataProvider>
       </body>
     </html>
