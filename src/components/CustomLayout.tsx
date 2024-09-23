@@ -1,17 +1,17 @@
 'use client'
 
-import React, { useState } from 'react';
-import { Box, Collapse } from '@mui/material';
-import { useData } from '@/hooks/use-data';
-import { usePathname } from 'next/navigation';
-import NestedList from './NestedList';
-import NavBar from './Navbar';
-import { fixNavigationSegment } from '@/utils/navigation';
+import React, { useState } from 'react'
+import { Box, Collapse } from '@mui/material'
+import { useData } from '@/hooks/use-data'
+import { usePathname } from 'next/navigation'
+import { fixNavigationSegment } from '@/utils/navigation'
+import NestedList from './NestedList'
+import NavBar from './Navbar'
 
 const TestLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [open, setOpen] = useState(false);
-  const pathname = usePathname();
-  const markdownMetadatas = fixNavigationSegment(useData().markdownMetadatas);
+  const [open, setOpen] = useState(false)
+  const pathname = usePathname()
+  const markdownMetadatas = fixNavigationSegment(useData().markdownMetadatas)
 
   return (
     <Box position="relative">
@@ -30,7 +30,11 @@ const TestLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           }}
         >
           <Collapse orientation="vertical" in={open}>
-            <NestedList pathname={pathname} items={markdownMetadatas} prevSegment="" />
+            <NestedList
+              pathname={pathname}
+              items={markdownMetadatas}
+              prevSegment=""
+            />
           </Collapse>
         </Box>
       </Box>
@@ -47,7 +51,7 @@ const TestLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         {children}
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default TestLayout;
+export default TestLayout
