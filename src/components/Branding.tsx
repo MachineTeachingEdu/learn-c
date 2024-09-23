@@ -17,7 +17,7 @@ function Branding() {
         sx={{
           color: blue[700],
           fontWeight: 700,
-          // display: { xs: 'none', md: 'block' },
+          display: { xs: 'none', md: 'block' },
         }}
       >
         Técnicas de Programação I
