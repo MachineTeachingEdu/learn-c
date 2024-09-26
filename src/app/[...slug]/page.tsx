@@ -1,7 +1,6 @@
 import { generateMarkdownSlugs, getMarkdownBySlug } from '@/utils/markdown-slug'
 import Markdown from '@/components/Markdown'
-import TestLayout from '@/components/CustomLayout'
-// import Layout from '@/components/Layout'
+import Layout from '@/components/Layout'
 
 export const dynamicParams = false
 
@@ -12,13 +11,11 @@ export async function generateStaticParams() {
   }))
 }
 
-// pathname={`/${params.slug.join('/')}`}
-
 export default async function Page({ params }: { params: { slug: string[] } }) {
   const { content } = await getMarkdownBySlug(params.slug)
   return (
-    <TestLayout>
+    <Layout>
       <Markdown text={content} />
-    </TestLayout>
+    </Layout>
   )
 }

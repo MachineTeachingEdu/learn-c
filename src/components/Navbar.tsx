@@ -11,6 +11,7 @@ import { Home, Info } from '@mui/icons-material'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
 import { grey } from '@mui/material/colors'
+import Link from 'next/link'
 import Branding from './Branding'
 
 interface NavBarProps {
@@ -38,6 +39,8 @@ const NavBar: React.FC<NavBarProps> = ({ open, onToggle }) => (
 
     <Box sx={{ display: 'flex', gap: 1 }}>
       <Button
+        LinkComponent={Link}
+        href="/"
         variant="contained"
         size="small"
         sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}
@@ -46,6 +49,8 @@ const NavBar: React.FC<NavBarProps> = ({ open, onToggle }) => (
         <Typography>Início</Typography>
       </Button>
       <Button
+        LinkComponent={Link}
+        href="/sobre"
         variant="contained"
         color="success"
         size="small"

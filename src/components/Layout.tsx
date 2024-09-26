@@ -8,7 +8,7 @@ import { fixNavigationSegment } from '@/utils/navigation'
 import NestedList from './NestedList'
 import NavBar from './Navbar'
 
-const TestLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [open, setOpen] = useState(false)
   const pathname = usePathname()
   const markdownMetadatas = fixNavigationSegment(useData().markdownMetadatas)
@@ -54,4 +54,4 @@ const TestLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   )
 }
 
-export default TestLayout
+export default Layout
