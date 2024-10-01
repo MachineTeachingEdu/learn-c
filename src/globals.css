@@ -2,12 +2,10 @@ html {
     scroll-behavior: smooth;
     scroll-padding: 4.5rem;
 }
-
 pre {
     margin: 0;
     overflow-x: hidden;
 }
-
 #barra-brasil, #barra-ccet {
     position: relative;
     z-index: 1001;
