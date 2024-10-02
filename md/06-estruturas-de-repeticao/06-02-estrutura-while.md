@@ -19,7 +19,7 @@ A estrutura do while é semelhante ao while, mas com uma diferença crucial: o b
 
 ## Exercícios
 
-**OBS: ** Não use for-loop para os exercícios abaixo
+**OBS:** Não use for-loop para os exercícios abaixo
 
 ###### Exercício 1
 

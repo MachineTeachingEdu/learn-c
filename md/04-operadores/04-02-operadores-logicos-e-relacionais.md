@@ -18,5 +18,5 @@ Nesta aula, você aprenderá a criar comparações lógicas utilizando os operad
 
 ## Exercícios
 
-Calma pequeno gafanhoto! Para utilizar os operadores acima com mais facilidade, é preciso aprender o próximo tópico onde abordaremos sobre estruturas de seleção.
+Para utilizar os operadores acima com mais facilidade, é preciso aprender o próximo tópico onde abordaremos sobre estruturas de seleção.
 
