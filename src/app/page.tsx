@@ -15,19 +15,19 @@ export default function Page() {
     <Layout>
       <H1>Curso de Algoritmos e Programação</H1>
       <P>
-        Seja muito bem-vindo ao curso de Algoritmos e Programação! Ao longo
-        deste curso, você terá a oportunidade de explorar e entender os
-        principais conceitos que guiam o mundo da programação.
+        Bem-vindo ao curso de Algoritmos e Programação! Neste espaço, você irá
+        explorar os conceitos fundamentais que formam a base da programação
+        moderna.
       </P>
       <P>
-        Esse site possui uma coletânea de diversos vídeos de autores diferentes
-        que auxiliarão no seu aprendizado. Além disso, ao fim de cada módulo,
-        você poderá fazer exercícios que serão essenciais nessa jornada,
-        portanto, não esqueça de fazer.
+        Este site é uma coletânea de vídeos de diversos autores, todos
+        projetados para enriquecer seu aprendizado. Ao final de cada módulo,
+        você encontrará exercícios práticos essenciais para consolidar seu
+        conhecimento, então não se esqueça de praticar!
       </P>
       <P>
-        No vídeo abaixo, você entenderá o por que programação é tão importante
-        nos dias atuais.
+        Assista ao vídeo abaixo para descobrir por que a programação é tão
+        crucial nos dias de hoje.
       </P>
       <Embed src="https://www.youtube.com/embed/Dv7gLpW91DM?si=Fh2IZPmGAGdoojvV" />
       <H3>Vamos começar?</H3>
