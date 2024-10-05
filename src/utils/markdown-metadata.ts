@@ -26,6 +26,7 @@ function getMarkdownMetadatas(currentPath: string): MarkdownMetadata[] {
       markdownMetadata.push({
         title: data.title,
         path: realPath,
+        description: data.description,
         segment: realPath.split('/').pop() || '',
         children: getMarkdownMetadatas(fullPath),
       })
@@ -35,6 +36,7 @@ function getMarkdownMetadatas(currentPath: string): MarkdownMetadata[] {
     if (content) {
       markdownMetadata.push({
         title: data.title,
+        description: data.description,
         path: realPath,
         segment: realPath.split('/').pop() || '',
         children: [],

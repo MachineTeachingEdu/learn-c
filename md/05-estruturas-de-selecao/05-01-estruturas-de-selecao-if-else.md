@@ -1,5 +1,6 @@
 ---
 title: 05.01. if-else
+description: Neste capítulo, você aprenderá sobre estruturas de seleção, que permitem que o programa tome decisões com base em condições específicas.
 ---
 # 06. Estruturas de Seleção (ou decisão)
 

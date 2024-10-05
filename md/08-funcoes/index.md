@@ -1,5 +1,6 @@
 ---
 title: 08. Funções
+description: Neste capítulo, você aprenderá sobre funções, que são fundamentais na programação. As funções permitem modularizar, reutilizar e organizar seu código de maneira eficiente.
 ---
 # 10. Funções
 

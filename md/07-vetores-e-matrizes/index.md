@@ -1,5 +1,6 @@
 ---
 title: 07. Vetores e Matrizes
+description: Neste capítulo, você vai explorar vetores e matrizes, estruturas essenciais para armazenar e manipular múltiplos valores do mesmo tipo em C.
 ---
 # 09. Vetores e Matrizes
 

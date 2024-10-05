@@ -1,6 +1,7 @@
 import { generateMarkdownSlugs, getMarkdownBySlug } from '@/utils/markdown-slug'
 import Markdown from '@/components/Markdown'
 import Layout from '@/components/Layout'
+import Navigator from '@/components/Navigator'
 
 export const dynamicParams = false
 
@@ -22,6 +23,7 @@ export default async function Page({
   return (
     <Layout>
       <Markdown text={content} />
+      <Navigator />
     </Layout>
   )
 }

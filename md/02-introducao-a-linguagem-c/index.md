@@ -1,5 +1,6 @@
 ---
 title: 02. Introdução a Linguagem C
+description: Este capítulo introduz a linguagem C, destacando a função dos compiladores e apresentando uma videoaula sobre como criar o primeiro programa em C.
 ---
 # 02. Introdução a Linguagem C
 

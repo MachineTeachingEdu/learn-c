@@ -1,5 +1,6 @@
 ---
 title: 03. Variáveis e tipos de dados
+description: Neste capítulo, você aprenderá a declarar variáveis e explorar os tipos de dados na linguagem C.
 ---
 
 # 03. Variáveis e tipos de dados

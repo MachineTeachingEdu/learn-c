@@ -1,5 +1,6 @@
 ---
 title: 04.01. Aritméticos
+description: Neste capítulo, você aprenderá a usar operadores aritméticos na linguagem C, como adição, subtração, multiplicação e divisão.
 ---
 
 # 04. Operadores Aritméticos

@@ -1,5 +1,6 @@
 ---
 title: 06.02. While e Do While
+description: Neste capítulo, você aprenderá sobre as estruturas de repetição while e do while, que permitem executar um bloco de código enquanto uma condição for verdadeira.
 ---
 # 08. Estruturas de Repetição: *while e do while*
 

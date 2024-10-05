@@ -2,12 +2,10 @@
 
 import Layout from '@/components/Layout'
 import { Embed } from '@/components/md/Addons'
-import { H1, H3, H6, P } from '@/components/md/Typography'
+import { H1, H3, P } from '@/components/md/Typography'
+import { NavigatorItem } from '@/components/Navigator'
 import { useData } from '@/hooks/use-data'
-import { Box, Paper } from '@mui/material'
-import { blue } from '@mui/material/colors'
-import Link from 'next/link'
-import { AiFillCaretRight } from 'react-icons/ai'
+import { Box } from '@mui/material'
 
 export default function Page() {
   const { markdownMetadatas } = useData()
@@ -33,34 +31,9 @@ export default function Page() {
       </P>
       <Embed src="https://www.youtube.com/embed/Dv7gLpW91DM?si=Fh2IZPmGAGdoojvV" />
       <H3>Vamos começar?</H3>
-      <Paper
-        variant="outlined"
-        component={Link}
-        href={firstMarkdown.path}
-        sx={{
-          p: 1,
-          display: 'flex',
-          gap: 5,
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          cursor: 'pointer',
-          textDecoration: 'none',
-          '&:hover': {
-            color: blue[700],
-          },
-        }}
-      >
-        <Box>
-          <H6>{firstMarkdown.title}</H6>
-          <P>
-            Introdução a disciplina de algoritmos e programação. Você aprenderá
-            o que são algoritmos e o que é uma linguagem de programação.
-          </P>
-        </Box>
-        <Box>
-          <AiFillCaretRight size={38} />
-        </Box>
-      </Paper>
+      <Box>
+        <NavigatorItem item={firstMarkdown} direction="next" />
+      </Box>
     </Layout>
   )
 }

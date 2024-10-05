@@ -1,5 +1,6 @@
 ---
 title: 06.01. For-loop
+description: Neste capítulo, você aprenderá sobre estruturas de repetição, que permitem que o computador execute ações repetidamente sem reescrever o código.
 ---
 # 08. Estruturas de Repetição
 

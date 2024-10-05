@@ -1,5 +1,6 @@
 ---
 title: 04.02. Lógicos e relacionais
+description: Neste capítulo, você aprenderá sobre operadores relacionais e lógicos na linguagem C, essenciais para a tomada de decisões em algoritmos.
 ---
 
 # 05. Operadores relacionais e lógicos

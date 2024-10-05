@@ -1,5 +1,6 @@
 ---
 title: 01. Algoritmos e Programação
+description: Neste capítulo, você aprenderá sobre algoritmos e desenvolverá seu primeiro algoritmo na prática.
 ---
 # 01. Algoritmos e Programação
 

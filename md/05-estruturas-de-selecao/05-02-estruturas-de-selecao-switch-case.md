@@ -1,5 +1,6 @@
 ---
 title: 05.02. switch-case
+description: Neste capítulo, você aprenderá sobre a estrutura de seleção switch-case, que permite decisões baseadas em múltiplas condições.
 ---
 # 07. Estruturas de Seleção (ou decisão)
 
