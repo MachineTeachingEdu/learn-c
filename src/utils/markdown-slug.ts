@@ -1,10 +1,10 @@
 import matter from 'gray-matter'
-import { cache } from 'react'
 import fs from 'fs'
 import path from 'path'
+import { cache } from 'react'
 import { readFile } from './read-file'
 
-export const getMarkdownBySlug = cache(async (slug: string[]) => {
+export const getMarkdownBySlug = cache(async (slug: string[] = []) => {
   let file = readFile(`./md/${slug.join('/')}.md`)
   if (!file) file = fs.readFileSync(`./md/${slug.join('/')}/index.md`, 'utf-8')
 

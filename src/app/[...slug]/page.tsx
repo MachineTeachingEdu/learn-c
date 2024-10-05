@@ -6,12 +6,18 @@ export const dynamicParams = false
 
 export async function generateStaticParams() {
   const slugs = await generateMarkdownSlugs()
-  return slugs.map((slug) => ({
+  const slugParams = slugs.map((slug) => ({
     slug: slug.split('/'),
   }))
+
+  return slugParams
 }
 
-export default async function Page({ params }: { params: { slug: string[] } }) {
+export default async function Page({
+  params,
+}: {
+  params: { slug: string[] | undefined }
+}) {
   const { content } = await getMarkdownBySlug(params.slug)
   return (
     <Layout>

@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography'
 
 export interface TypographyProps {
   children: React.ReactNode
-  id: string
+  id?: string
 }
 
 export const H1: React.FC<TypographyProps> = ({ children, id }) => (

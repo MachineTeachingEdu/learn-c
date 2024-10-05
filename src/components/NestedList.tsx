@@ -1,6 +1,7 @@
 import React from 'react'
 import { List } from '@mui/material'
 import { CustomNavigation } from '@/utils/navigation'
+import generateRandomKey from '@/utils/random'
 import NestedListItem from './NestedListItem'
 
 interface NestedListProps {
@@ -17,7 +18,7 @@ const NestedList: React.FC<NestedListProps> = ({
   <List>
     {items.map((item) => (
       <NestedListItem
-        key={item.title}
+        key={generateRandomKey()}
         item={item}
         prevSegment={prevSegment}
         pathname={pathname}

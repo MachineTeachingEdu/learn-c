@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ListItem, Typography, Box } from '@mui/material'
 import { grey } from '@mui/material/colors'
 import { CustomNavigation } from '@/utils/navigation'
+import generateRandomKey from '@/utils/random'
 
 interface NestedListItemProps {
   item: CustomNavigation
@@ -22,11 +23,12 @@ const NestedListItem: React.FC<NestedListItemProps> = ({
   return (
     <>
       {hasChildren ? (
-        <ListItem>
+        <ListItem key={generateRandomKey()}>
           <Typography fontWeight={700}>{item.title}</Typography>
         </ListItem>
       ) : (
         <ListItem
+          key={generateRandomKey()}
           component={Link}
           href={href}
           sx={{ background: isActive ? grey[300] : 'transparent' }}
@@ -40,7 +42,7 @@ const NestedListItem: React.FC<NestedListItemProps> = ({
             item.children.length > 0 &&
             item.children.map((child) => (
               <NestedListItem
-                key={child.title}
+                key={generateRandomKey()}
                 item={child}
                 prevSegment={`${prevSegment}/${item.segment}`}
                 pathname={pathname}
